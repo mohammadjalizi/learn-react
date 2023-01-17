@@ -8,7 +8,7 @@ function App() {
     
     <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
     <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
-    <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
+    <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={30} imges={img1} />
     <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
     <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
     <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
