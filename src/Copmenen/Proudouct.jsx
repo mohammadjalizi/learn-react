@@ -1,7 +1,7 @@
 import React from 'react'
 
-function Proudouct(imges,name,price) {
-    if(props.price>100){
+function Proudouct({imges,name,price}) {
+ 
 
         // let{imges,name,price}=props
         return (
@@ -17,7 +17,15 @@ function Proudouct(imges,name,price) {
           )
 
     }
-return null
-}
+
+
 
 export default Proudouct
+
+
+
+// 
+
+
+
+

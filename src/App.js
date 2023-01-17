@@ -1,17 +1,25 @@
 import img1 from './Copmenen/images/Album 1.png'
+import img2 from './Copmenen/images/Album 2.png'
+import img3 from './Copmenen/images/Album 3.png'
 import './App.css';
 import Proudouct from './Copmenen/Proudouct';
 
 function App() {
+
+
+  const allproudcts=[
+
+{id:1,name:'mohammad', price:30 , imges:img1},
+{id:2,name:'ali', price:105 , imges:img2},
+{id:3,name:'acer', price:90 , imges:img3},
+
+  ]
   return (
     <div  className=' flex flex-wrap  justify-center '>
     
-    <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
-    <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
-    <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={30} imges={img1} />
-    <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
-    <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
-    <Proudouct name="ali"  title="aliajaliada;ja;;da"  price={120} imges={img1} />
+    <Proudouct {...allproudcts[0]} />
+    <Proudouct {...allproudcts[1]} />
+    <Proudouct {...allproudcts[2]} />
     </div>
  
   );
