@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Proudouct(props) {
+function Proudouct(imges,name,price) {
     if(props.price>100){
 
-        let{imges,name,price}=props
+        // let{imges,name,price}=props
         return (
             <div className='  '>
         <div className=' rounded-3xl bg-slate-500 h-auto  m-2 '>
