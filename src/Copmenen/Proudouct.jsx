@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Proudouct({imges,name,price}) {
+function Proudouct({imges,name,price,children}) {
  
 
         // let{imges,name,price}=props
@@ -10,6 +10,7 @@ function Proudouct({imges,name,price}) {
         <img src={imges}/>
         <h1>{name}</h1>
         <p>${price}</p>
+        {children}
         </div>
         
         
@@ -17,6 +18,7 @@ function Proudouct({imges,name,price}) {
           )
 
     }
+   
 
 
 

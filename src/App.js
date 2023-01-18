@@ -17,9 +17,11 @@ function App() {
   return (
     <div  className=' flex flex-wrap  justify-center '>
     
-    <Proudouct {...allproudcts[0]} />
-    <Proudouct {...allproudcts[1]} />
-    <Proudouct {...allproudcts[2]} />
+    <Proudouct {...allproudcts[0]} >
+      <button>  off(50%)   </button>
+       </Proudouct>
+    <Proudouct {...allproudcts[1]} > </Proudouct>
+    <Proudouct {...allproudcts[2]} > </Proudouct>
     </div>
  
   );
