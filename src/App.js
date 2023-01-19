@@ -3,6 +3,7 @@ import img2 from './Copmenen/images/Album 2.png'
 import img3 from './Copmenen/images/Album 3.png'
 import './App.css';
 import Proudouct from './Copmenen/Proudouct';
+import Modal from './Copmenen/Modal';
 
 function App() {
 
@@ -22,6 +23,10 @@ function App() {
        </Proudouct>
     <Proudouct {...allproudcts[1]} > </Proudouct>
     <Proudouct {...allproudcts[2]} > </Proudouct>
+
+    <Modal> 
+              
+    <h1 className='  text-center'>  hello   </h1> </Modal>
     </div>
  
   );
