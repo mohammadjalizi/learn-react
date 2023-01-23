@@ -1,8 +1,13 @@
 import React from 'react'
 
 function Proudouct({imges,name,price,children}) {
- 
+ state={
+users:[
+{id:1, name:muna ,}
 
+]
+
+ }
         // let{imges,name,price}=props
         return (
             <div className='  '>
