@@ -15,12 +15,31 @@ super(props)
 this.state={
 
   users:[
-    {id:1,name:'mohammad', price:30 , imges:img1},
-    {id:2,name:'ali', price:105 , imges:img2},
-    {id:3,name:'acer', price:90 , imges:img3},
+    {id:1,name:'mohammad',},
+    {id:2,name:'ali', },
+    {id:3,name:'acer', },
   ]
 }
-this.code=20
+ setTimeout(() => {
+  this.setState({
+
+    users:[
+      {id:1,name:'s90kart',},
+      {id:2,name:'nissan',},
+      {id:3,name:'pardo',},
+    ]
+  })
+ }, 5000);
+ setTimeout(() => {
+  this.setState({
+
+    users:[
+      {id:1,name:'s90kart', price:30 , imges:img1},
+      {id:2,name:'nissan', price:105 , imges:img2},
+      {id:3,name:'pardo', price:90 , imges:img3},
+    ]
+  })
+ }, 5000);
  }
 
      
