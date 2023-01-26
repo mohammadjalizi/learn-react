@@ -20,34 +20,36 @@ this.state={
     {id:3,name:'acer', },
   ]
 }
- setTimeout(() => {
-  this.setState({
 
-    users:[
-      {id:1,name:'s90kart',},
-      {id:2,name:'nissan',},
-      {id:3,name:'pardo',},
-    ]
-  })
- }, 5000);
- setTimeout(() => {
-  this.setState({
+this.code=25
+//  setTimeout(() => {
+//   this.setState({
 
-    users:[
-      {id:1,name:'s90kart', price:30 , imges:img1},
-      {id:2,name:'nissan', price:105 , imges:img2},
-      {id:3,name:'pardo', price:90 , imges:img3},
-    ]
-  })
- }, 5000);
+//     users:[
+//       {id:1,name:'s90kart',},
+//       {id:2,name:'nissan',},
+//       {id:3,name:'pardo',},
+//     ]
+//   })
+//  }, 5000);
+//  setTimeout(() => {
+//   this.setState({
+
+//     users:[
+//       {id:1,name:'s90kart', price:30 , imges:img1},
+//       {id:2,name:'nissan', price:105 , imges:img2},
+//       {id:3,name:'pardo', price:90 , imges:img3},
+//     ]
+//   })
+//  }, 5000);
  }
 
      
 
     render() {  
       return (
-        <div  className=' flex flex-wr`ap  justify-center '>
-        {this.code}
+        <div  className='  '>
+    <h1>{this.code}</h1>
         <Proudouct {...this.state.users[0]} >
           <button>  off(50%)   </button>
           </Proudouct>
