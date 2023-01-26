@@ -1,10 +1,9 @@
-import img1 from './Copmenen/images/Album 1.png'
-import img2 from './Copmenen/images/Album 2.png'
-import img3 from './Copmenen/images/Album 3.png'
+
 import './App.css';
-import Proudouct from './Copmenen/Proudouct';
-import Modal from './Copmenen/Modal';
+
+
 import React from 'react';
+import Conter from './Copmenen/couter/Conter';
 
     class  App extends  React.Component {
 
@@ -58,17 +57,9 @@ keydownhendler(){
     render() {  
       return (
         <div  className='  '>
-    <h1 onClick={(()=>this.clickhandel())}>{this.code}</h1>
-    <input type="text" onKeyDown={this.keydownhendler}   className="  bg-gray-800  text-red-600 " ></input>
-        <Proudouct {...this.state.users[0]}/ >
-   
-
-          <Proudouct {...this.state.users[0]} > </Proudouct>
-          <Proudouct {...this.state.users[0]} > </Proudouct>
+ 
   
-        <Modal> 
-                  
-        <h1 className='  text-center'>  hello   </h1> </Modal>
+   <Conter/>
         </div>
     
       );
