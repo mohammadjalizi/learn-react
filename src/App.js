@@ -22,6 +22,7 @@ this.state={
 }
 
 this.code=25
+
 //  setTimeout(() => {
 //   this.setState({
 
@@ -42,14 +43,17 @@ this.code=25
 //     ]
 //   })
 //  }, 5000);
- }
 
+ }
+ clickhandel (){
+  alert("ok")
+}
      
 
     render() {  
       return (
         <div  className='  '>
-    <h1>{this.code}</h1>
+    <h1 onClick={this.clickhandel}>{this.code}</h1>
         <Proudouct {...this.state.users[0]} >
           <button>  off(50%)   </button>
           </Proudouct>
