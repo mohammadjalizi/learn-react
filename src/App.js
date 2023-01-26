@@ -48,15 +48,20 @@ this.code=25
  clickhandel (){
   alert("ok")
 }
+keydownhendler(){
+
+  console.log("shood")
+}
      
 
     render() {  
       return (
         <div  className='  '>
     <h1 onClick={this.clickhandel}>{this.code}</h1>
-        <Proudouct {...this.state.users[0]} >
-          <button>  off(50%)   </button>
-          </Proudouct>
+    <input type="text" onKeyDown={this.keydownhendler}   className="  bg-gray-800  text-red-600 " ></input>
+        <Proudouct {...this.state.users[0]}/ >
+   
+
           <Proudouct {...this.state.users[0]} > </Proudouct>
           <Proudouct {...this.state.users[0]} > </Proudouct>
   
