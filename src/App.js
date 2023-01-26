@@ -44,14 +44,7 @@ this.code=25
 //  }, 5000);
 
  }
- clickhandel (){
-console.log(this)
-  this.cod=40
-}
-keydownhendler(){
 
-  console.log("shood")
-}
      
 
     render() {  

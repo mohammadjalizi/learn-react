@@ -1,19 +1,48 @@
-import React from 'react'
+import { Component } from "react";
 
-function Conter() {
-  return (
-    <div className=' bg-orange-400 w-[30%] m-auto '>
-    <h1 className=' text-center '>conter</h1>
-    <p>0</p>
-   <div className=' flex justify-between '>
-   
-   <button>addcount</button>
-   <button> lawer cont </button>
-       
-   </div>
-   
-       </div>
-  )
+
+
+export default  class Conter  extends Component{
+constructor(props){
+super(props)
+
+this.state={
+
+  conter:0
+}
+this.addclick=this.addclick.bind(this)
+this.minusclick=this.minusclick.bind(this)
+
 }
 
-export default Conter
+addclick(){
+  
+  alert("okkk")
+}
+  minusclick(){
+
+    console.log("minus sof")
+  }
+
+render(){
+
+return(
+
+
+  <div className=' bg-orange-400 w-[30%] m-auto mt-64 '>
+  <h1 className=' text-center '>conter</h1>
+  <p>{Conter}</p>
+ <div className=' flex justify-between '>
+ 
+ <button onClick={this.addclick}>addcount</button>
+ <button onClick={this.minusclick}> lawer cont </button>
+     
+ </div>
+ 
+     </div>
+
+)
+
+}
+
+}
