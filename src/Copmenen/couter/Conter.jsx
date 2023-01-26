@@ -16,9 +16,9 @@ this.minusclick=this.minusclick.bind(this)
 }
 
 addclick(){
-  this.setState( prevxount =>{
+  this.setState( item =>{
 
-return {conter: prevxount.conter+1}
+return {conter: item.conter+1}
 
   })
 

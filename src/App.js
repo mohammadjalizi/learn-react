@@ -4,6 +4,7 @@ import './App.css';
 
 import React from 'react';
 import Conter from './Copmenen/couter/Conter';
+import Temp from './Copmenen/temps/Temp';
 
     class  App extends  React.Component {
 
@@ -53,6 +54,7 @@ this.code=25
  
   
    <Conter/>
+   <Temp/>
         </div>
     
       );
