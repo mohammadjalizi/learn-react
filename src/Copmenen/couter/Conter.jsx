@@ -16,12 +16,20 @@ this.minusclick=this.minusclick.bind(this)
 }
 
 addclick(){
-  
-  alert("okkk")
+  this.setState( prevxount =>{
+
+return {conter: prevxount.conter+1}
+
+  })
+
+
 }
   minusclick(){
 
-    console.log("minus sof")
+  this.setState(prevxount=>{
+return{conter:prevxount.conter-1}
+
+  })
   }
 
 render(){
@@ -31,7 +39,7 @@ return(
 
   <div className=' bg-orange-400 w-[30%] m-auto mt-64 '>
   <h1 className=' text-center '>conter</h1>
-  <p>{Conter}</p>
+  <p>  {  this.state.conter} </p>
  <div className=' flex justify-between '>
  
  <button onClick={this.addclick}>addcount</button>
