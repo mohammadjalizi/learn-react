@@ -10,6 +10,18 @@ constructor(props){
      tempclass:"cold"
  }
 
+this.Addplus=this.Addplus.bind(this)
+this.Minus=this.Minus.bind(this)
+}
+
+
+Addplus(){
+
+
+}
+
+Minus(){
+
 
 }
 render(){
