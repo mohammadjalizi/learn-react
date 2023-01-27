@@ -2,7 +2,16 @@ import { Component } from "react";
 
 export default  class Temp  extends Component{
 
+constructor(props){
+ super(props)
+ this.state={
 
+    Temp:10,
+     tempclass:"cold"
+ }
+
+
+}
 render(){
 
 return(
@@ -10,14 +19,14 @@ return(
 
 <div>
 
-    <div className=" cold  border rounded-full p-2  w-14  ">
+    <div className={` bg-gray-700 p-5 ${this.state.tempclass}`}>
 
         10 c
     </div>
     <div className=" flex justify-between ">
 
-        <button>+</button>
-        <button>-   </button>
+        <button  onClick={this.Addplus}>+</button>
+        <button onClick={this.Minus}>-   </button>
     </div>
 </div>
 
