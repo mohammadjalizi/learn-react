@@ -16,8 +16,14 @@ this.Minus=this.Minus.bind(this)
 
 
 Addplus(){
+if(this.state.Temp > 30){
+return false
 
+}
+this.setState(prevState=>{
 
+     return {Temp:prevState.Temp +1}
+})
 }
 
 Minus(){
