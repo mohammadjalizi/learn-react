@@ -27,7 +27,14 @@ this.setState(prevState=>{
 }
 
 Minus(){
-
+    if(this.state.Temp < 0){
+        return false
+        
+        }
+        this.setState(prevState=>{
+        
+             return {Temp:prevState.Temp -1}
+        })
 
 }
 render(){
@@ -39,7 +46,7 @@ return(
 
     <div className={` bg-gray-700 p-5 ${this.state.tempclass}`}>
 
-        10 c
+{this.state.Temp}
     </div>
     <div className=" flex justify-between ">
 
