@@ -18,8 +18,10 @@ this.state={
     {id:1,name:'mohammad',},
     {id:2,name:'ali', },
     {id:3,name:'acer', },
-  ]
+  ],
+  age:19
 }
+
 
 this.code=25
 
@@ -49,6 +51,23 @@ this.code=25
      
 
     render() {  
+      if(this.state.age >18){
+
+        return (
+          <div>
+welcome website
+
+          </div>
+        )
+      }else{
+
+     return (
+<>
+errow
+</>
+
+     )
+      }
       return (
         <div  className='  '>
  
