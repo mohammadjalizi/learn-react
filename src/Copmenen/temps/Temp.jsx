@@ -24,8 +24,8 @@ this.setState(prevState=>{
 
      return {Temp:prevState.Temp +1}
 })
-if(this,this.state.Temp>=15){
-return ({tempclass:"hot"})
+if(this.state.Temp>=15){
+ this.setState({tempclass:'hot'})
 
 }
 }
@@ -39,7 +39,10 @@ Minus(){
         
              return {Temp:prevState.Temp -1}
         })
-
+        if(this.state.Temp<=15){
+            this.setState({tempclass:'cold'})
+           
+           }
 }
 render(){
 
