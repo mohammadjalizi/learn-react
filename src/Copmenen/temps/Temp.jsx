@@ -24,13 +24,27 @@ return false
 }
 this.setState(preveState=>{
 
-  this.setState({temp:preveState+1})
+ return {temp:preveState.temp+1}
 
 })
+if(this.state.temp>=15){
+this.setState({tempclass:'hot'})
 
+}
     }
     Minus(){
+if(this.state.temp < 0){
+return false
 
+}
+this.setState(preveState=>{
+return {temp:preveState.temp-1}
+
+})
+if(this.state.temp<=15){
+    this.setState({tempclass:'cold'})
+    
+    }
 
     }
 render(){
@@ -38,8 +52,8 @@ render(){
 return(
     <div className=" bg-green-800  w-[50%] m-auto h-3/5 ">
 
-<div className={`    `}>
-    10 c
+<div className={`  ${this.state.tempclass}   `}>
+  {this.state.temp}
 
 </div>
 <div className=" flex justify-between">
