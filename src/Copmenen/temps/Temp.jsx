@@ -24,6 +24,10 @@ this.setState(prevState=>{
 
      return {Temp:prevState.Temp +1}
 })
+if(this,this.state.Temp>=15){
+return ({tempclass:"hot"})
+
+}
 }
 
 Minus(){
@@ -44,7 +48,7 @@ return(
 
 <div>
 
-    <div className={` bg-gray-700 p-5 ${this.state.tempclass}`}>
+    <div className={`  p-5  ${this.state.tempclass}`}>
 
 {this.state.Temp}
     </div>
