@@ -51,27 +51,37 @@ this.code=25
      
 
     render() {  
-      if(this.state.age >18){
+//       if(this.state.age >20){
 
-        return (
-          <div>
-welcome website
+//         return (
+//           <div>
+// <Temp/>
 
-          </div>
-        )
-      }else{
+//           </div>
+//         )
+//       }else{
 
-     return (
-<>
-errow
-</>
+//      return (
+// <>
+// errow
+// </>
 
-     )
-      }
+//      )
+//       }
+
+let erroemasage=null
+
+if(this.state.age <18){
+erroemasage=<h1>no youre welcome</h1>
+  
+}else{
+erroemasage=<h1> welcome page me </h1>
+
+}
       return (
         <div  className='  '>
  
-  
+  {erroemasage}
    <Conter/>
    <Temp/>
         </div>
