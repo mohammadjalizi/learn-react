@@ -80,9 +80,9 @@ this.code=25
 // }
       return (
         <div  className='  '>
- { this.state.age>18 ?'welcome  tru' :'no welcom'}
-   <Conter/>
-   <Temp/>
+ { this.state.age>18 ?  <Conter/> :   <Temp/>}
+ 
+
         </div>
     
       );
