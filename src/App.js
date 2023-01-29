@@ -69,19 +69,18 @@ this.code=25
 //      )
 //       }
 
-let erroemasage=null
+// let erroemasage=null
 
-if(this.state.age <18){
-erroemasage=<h1>no youre welcome</h1>
+// if(this.state.age <18){
+// erroemasage=<h1>no youre welcome</h1>
   
-}else{
-erroemasage=<h1> welcome page me </h1>
+// }else{
+// erroemasage=<h1> welcome page me </h1>
 
-}
+// }
       return (
         <div  className='  '>
- 
-  {erroemasage}
+ { this.state.age>18 ?'welcome  tru' :'no welcom'}
    <Conter/>
    <Temp/>
         </div>
