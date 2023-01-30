@@ -1,11 +1,12 @@
 
 import './App.css';
-
+import User from './Copmenen/user/User';
 
 import React from 'react';
 import Conter from './Copmenen/couter/Conter';
 import Temp from './Copmenen/temps/Temp';
 import Navbar from './Copmenen/navbar/Navbar';
+
     class  App extends  React.Component {
 
  
@@ -15,8 +16,8 @@ super(props)
 this.state={
 
   users:[
-    {id:1,name:'mohammad',},
-    {id:2,name:'ali', },
+    {id:1,name:'mohammad', age:20},
+    {id:2,name:'ali',age:33 },
     {id:3,name:'acer', },
   ],
   age:19
@@ -80,7 +81,12 @@ this.code=25
 // }
       return (
         <div  className='  '>
+      {this.state.users.map(item=>(
+
+<User {...item}/>
+      ))}
           <Navbar/>
+        
  { this.state.age>18 ?  <Conter/> :   <Temp/>}
  
 
