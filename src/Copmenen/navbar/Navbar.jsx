@@ -18,11 +18,15 @@ nootif:[
   render() {   
     return (
       <div className=' bg-yellow-200 '>
+{this.state.nootif>0&&(
 
 <div className=' flex  '> 
 <li> navbar</li>
 <span className=' mb-4 ml-6 rounded-full  border-[2px] p-4 bg-indigo-500  '>{this.state.nootif.length}</span>
 </div>
+
+
+)}
 
 
       </div>
