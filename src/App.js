@@ -5,7 +5,7 @@ import './App.css';
 import React from 'react';
 import Conter from './Copmenen/couter/Conter';
 import Temp from './Copmenen/temps/Temp';
-
+import Navbar from './Copmenen/navbar/Navbar';
     class  App extends  React.Component {
 
  
@@ -80,6 +80,7 @@ this.code=25
 // }
       return (
         <div  className='  '>
+          <Navbar/>
  { this.state.age>18 ?  <Conter/> :   <Temp/>}
  
 
