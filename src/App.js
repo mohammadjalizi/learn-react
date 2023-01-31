@@ -80,10 +80,11 @@ this.code=25
 
 // }
       return (
-        <div  className='  '>
+        <div    className='  '>
       {this.state.users.map(item=>(
-
+<div key={item.id}> 
 <User {...item}/>
+ </div>
       ))}
           <Navbar/>
         
