@@ -10,7 +10,8 @@ super(props)
 
 this.state={
 username:'',
-texterae:''
+texterae:'',
+isloading:false
 
 }
 
@@ -34,7 +35,10 @@ username:event.nativeEvent.target.value
     chanchtext(event){
 
         console.log(event)
-        
+        this.setState({
+textarea:event.nativeEvent.target.value
+
+        })
         }
   render() {
     return (
@@ -45,6 +49,12 @@ username:event.nativeEvent.target.value
     </div>
 
 <textarea value={this.state.texterae}   onChange={this.chanchtext}> </textarea>
+<div>
+
+<label htmlFor='login'>login</label>
+<input type="checkbox"  value={this.state.isloading}></input>
+
+</div>
       </div>
     )
   }
