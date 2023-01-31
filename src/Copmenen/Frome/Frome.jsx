@@ -2,20 +2,30 @@ import React, { Component } from 'react'
 
 export default class Frome extends Component {
 
+
+
     constructor(props){
 super(props)
+
+
 this.state={
 username:''
 
 }
 
-        
+
+this.CLICKCHng=this.CLICKCHng.bind(this)
+    }
+    CLICKCHng(){
+
+
+    
     }
   render() {
     return (
       <div cl>
 <div>
-    <input type="text"  value={this.state.username}  className=" bg-slate-500 "/>
+    <input type="text"  value={this.state.username} onChange={this.CLICKCHng}  className=" bg-slate-500 "/>
     </div>
 
 
