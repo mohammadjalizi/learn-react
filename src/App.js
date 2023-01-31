@@ -7,7 +7,7 @@ import Conter from './Copmenen/couter/Conter';
 import Temp from './Copmenen/temps/Temp';
 import Navbar from './Copmenen/navbar/Navbar';
 import Frome from './Copmenen/Frome/Frome';
-
+import Projectform from './project/form/Projectform';
     class  App extends  React.Component {
 
  
@@ -84,6 +84,8 @@ this.code=25
         <div    className='  '>
 
           <Frome/>
+
+          <Projectform/>
       {this.state.users.map(item=>(
 <div key={item.id}> 
 <User {...item}/>

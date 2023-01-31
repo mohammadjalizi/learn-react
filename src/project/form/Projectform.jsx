@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class  extends Component {
+export default class  Projectfrom extends Component {
 
   constructor(props){
 super(props)
@@ -16,8 +16,8 @@ this.submithandel=this.submithandel.bind(this)
 
 
 
-  submithandel(){
-
+  submithandel(event){
+event.preventdefault()
 
   }
   render() {
@@ -25,11 +25,11 @@ this.submithandel=this.submithandel.bind(this)
       <div>
 
 
-<div className='from'>
+<div className=' flex flex-col  '>
 
 
-<form className=''  onSubmit={this.submithandel}  autoComplete="off">
-
+<form className='  bg-yellow-500 w-[50%] m-auto rounded-3xl border border-cyan-300  '  onSubmit={this.submithandel}  autoComplete="off">
+<input type="text" ></input>
 
 </form>
 
