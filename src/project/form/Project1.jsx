@@ -8,7 +8,9 @@ export default class Project1 extends Component {
             submited:false,
             firstNameData:'',
             lastNameData:'',
-            emailData:''
+            emailData:'',
+            Allvalid:false
+            
 
 
 
@@ -25,6 +27,20 @@ this.setState({
 submited:true
 
 })
+if(this.state.firstNameData.length!==0&&this.state.lastNameData.length!==0 &&this.state.emailData.length!==0){
+
+  this.setState({
+Allvalid:true
+
+  })
+  setTimeout(() => {
+    this.state({
+      Allvalid:false
+    })
+  }, 3000);
+
+
+}
      }
      firstnameChang(event){
       this.setState({
@@ -58,15 +74,28 @@ firstNameData:event.target.value
 
 <form className='  bg-yellow-500 w-[50%] m-auto rounded-3xl border border-cyan-300  '  onSubmit={this.submithandel}  autoComplete="off">
     <div className=' m-auto '>  
+    <div>   
 <input type="text"  value={this.state.firstNameData}  placeholder="firstName" onChange={this.firstnameChang}  className=" flex flex-col   m-auto py-2 mb-4 rounded-3xl text-center " >
 
 
 </input>
+{this.state.submited &&this.state.firstNameData.length===0 &&(
+  <span className=' text-center block  text-red-400  w-full '>   pleas enter firstname  </span>
+
+)}
+
+</div>
+<div>    
 <input type="text"  value={this.state.lastNameData}  placeholder="lastname" onChange={this.lastnameChang}  className=" flex flex-col  m-auto py-2 mb-4 rounded-3xl text-center"    >
 
   
 </input>
+{ this.state.submited &&  this.state.lastNameData.length===0 &&(
+  <span className=' text-center block  text-red-400  w-full '>  please enter lastName  </span>
 
+) }
+
+</div>
 <div>  
 <input type="text"  value={this.state.emailData}  placeholder="email"   onChange={this.emailChang}  className=" flex flex-col  m-auto py-2 mb-4 rounded-3xl text-center"   >
 
@@ -74,7 +103,7 @@ firstNameData:event.target.value
 </input>
 {this.state.submited && this.state.emailData.length===0&&(
 
-<span className=' text-center  text-red-400  w-full '>  plear add emaild  </span>
+<span className=' text-center block  text-red-400  w-full '>  plear add emaild  </span>
 
 
 )}
