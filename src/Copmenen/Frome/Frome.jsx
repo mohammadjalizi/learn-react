@@ -18,6 +18,7 @@ isloading:false
 
 this.CLICKCHng=this.CLICKCHng.bind(this)
 this.chanchtext=this.chanchtext.bind(this)
+this.isloadingchang=this.isloadingchang.bind(this)
     }
     CLICKCHng(event){
 console.log(event)
@@ -40,6 +41,17 @@ textarea:event.nativeEvent.target.value
 
         })
         }
+
+isloadingchang(event){
+// console.log(event)
+this.setState({
+isloading: event.nativeEvent.target.checked
+
+})
+
+}
+
+
   render() {
     return (
       <div >
@@ -52,7 +64,7 @@ textarea:event.nativeEvent.target.value
 <div>
 
 <label htmlFor='login'>login</label>
-<input type="checkbox"  value={this.state.isloading}></input>
+<input type="checkbox"  value={this.state.isloading} onChange={this.isloadingchang}></input>
 
 </div>
       </div>
