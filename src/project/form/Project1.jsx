@@ -26,20 +26,20 @@ submited:true
 
 })
      }
-     firstnameChang(){
+     firstnameChang(event){
       this.setState({
 firstNameData:event.target.value
 
       })
 
      }
-     lastnameChang(){
+     lastnameChang(event){
       this.setState({
         lastNameData:event.target.value
         
               })
      }
-     emailChang(){
+     emailChang(event){
       this.setState({
         emailData:event.target.value
         
@@ -66,10 +66,20 @@ firstNameData:event.target.value
 
   
 </input>
+
+<div>  
 <input type="text"  value={this.state.emailData}  placeholder="email"   onChange={this.emailChang}  className=" flex flex-col  m-auto py-2 mb-4 rounded-3xl text-center"   >
 
   
 </input>
+{this.state.submited && this.state.emailData.length===0&&(
+
+<span className=' text-center  text-red-400  w-full '>  plear add emaild  </span>
+
+
+)}
+</div>
+
 <button className=' text-center rounded-3xl  shadow-2xl  flex justify-center'> rigistar </button>
 </div>
 </form>
