@@ -7,8 +7,8 @@ import Conter from './Copmenen/couter/Conter';
 import Temp from './Copmenen/temps/Temp';
 import Navbar from './Copmenen/navbar/Navbar';
 import Frome from './Copmenen/Frome/Frome';
-import Projectfrom from './project/form/Projectform';
-    class  App extends  React.Component {
+import Project1 from './project/form/Project1';
+export  class  App extends  React.Component {
 
  
  constructor (props){
@@ -84,7 +84,7 @@ this.code=25
         <div    className='  '>
 
           <Frome/>
-
+          
       {this.state.users.map(item=>(
 <div key={item.id}> 
 <User {...item}/>
@@ -94,7 +94,7 @@ this.code=25
         
  { this.state.age>18 ?  <Conter/> :   <Temp/>}
  
-
+<Project1/>
         </div>
     
       );
