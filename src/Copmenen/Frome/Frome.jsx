@@ -16,14 +16,14 @@ username:''
 
 this.CLICKCHng=this.CLICKCHng.bind(this)
     }
-    CLICKCHng(){
-
+    CLICKCHng(event){
+console.log(event)
 
     
     }
   render() {
     return (
-      <div cl>
+      <div >
 <div>
     <input type="text"  value={this.state.username} onChange={this.CLICKCHng}  className=" bg-slate-500 "/>
     </div>
