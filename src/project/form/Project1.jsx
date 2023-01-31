@@ -34,7 +34,7 @@ Allvalid:true
 
   })
   setTimeout(() => {
-    this.state({
+    this.setState({
       Allvalid:false
     })
   }, 3000);
@@ -73,7 +73,11 @@ firstNameData:event.target.value
 
 
 <form className='  bg-yellow-500 w-[50%] m-auto rounded-3xl border border-cyan-300  '  onSubmit={this.submithandel}  autoComplete="off">
-    <div className=' m-auto '>  
+    <div className=' m-auto '> 
+    <h4>{this.state.submited&&this.state.Allvalid&&(
+<h1 className=' text-blue-300'>suscrid</h1>
+
+    )}</h4> 
     <div>   
 <input type="text"  value={this.state.firstNameData}  placeholder="firstName" onChange={this.firstnameChang}  className=" flex flex-col   m-auto py-2 mb-4 rounded-3xl text-center " >
 
