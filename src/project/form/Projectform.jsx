@@ -13,6 +13,9 @@ submited:false
 
 }
 this.submithandel=this.submithandel.bind(this)
+this.firstnameChang=this.firstnameChang.bind(this)
+this.lastnameChang=this.lastnameChang.bind(this)
+this.emailChang=this.emailChang.bind(this)
 
   }
 

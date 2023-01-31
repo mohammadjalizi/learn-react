@@ -54,19 +54,32 @@ isloading: event.nativeEvent.target.checked
 
   render() {
     return (
-      <div >
-<div>
-    <h1>  {this.state.username}  </h1>
-    <input type="text"  value={this.state.username} onChange={this.CLICKCHng}  className=" bg-slate-500 "/>
-    </div>
+   <div>
 
-<textarea value={this.state.texterae}   onChange={this.chanchtext}> </textarea>
-<div>
 
-<label htmlFor='login'>login</label>
-<input type="checkbox"  value={this.state.isloading} onChange={this.isloadingchang}></input>
+<div className=' flex flex-col  '>
+
+
+<form className='  bg-yellow-500 w-[50%] m-auto rounded-3xl border border-cyan-300  '  onSubmit={this.submithandel}  autoComplete="off">
+    <div className=' m-auto '>  
+<input type="text"  value={this.state.firstNameData}  placeholder="firstName" onChange={this.firstnameChang}  className=" flex flex-col   m-auto py-2 mb-4 rounded-3xl text-center " >
+
+
+</input>
+<input type="text"  value={this.state.lastNameData}  placeholder="lastname" onChange={this.lastnameChang}  className=" flex flex-col  m-auto py-2 mb-4 rounded-3xl text-center"    >
+
+  
+</input>
+<input type="text"  value={this.state.emailData}  placeholder="email"   onChange={this.emailChang}  className=" flex flex-col  m-auto py-2 mb-4 rounded-3xl text-center"   >
+
+  
+</input>
+</div>
+</form>
+
 
 </div>
+
       </div>
     )
   }
