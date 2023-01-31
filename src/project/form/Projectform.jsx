@@ -6,7 +6,9 @@ export default class  Projectfrom extends Component {
 super(props)
 
 this.state={
-
+firstNameData:"",
+lastNameData:"",
+emailData:"",
 submited:false
 
 }
@@ -29,8 +31,18 @@ event.preventdefault()
 
 
 <form className='  bg-yellow-500 w-[50%] m-auto rounded-3xl border border-cyan-300  '  onSubmit={this.submithandel}  autoComplete="off">
-<input type="text" ></input>
+<input type="text"  value={this.state.firstNameData}  placeholder="firstName">
 
+
+</input>
+<input type="text"  value={this.state.lastNameData}  placeholder="lastname">
+
+  
+</input>
+<input type="text"  value={this.state.emailData}  placeholder="email">
+
+  
+</input>
 </form>
 
 
