@@ -27,13 +27,23 @@ submited:true
 })
      }
      firstnameChang(){
+      this.setState({
+firstNameData:event.target.value
+
+      })
 
      }
      lastnameChang(){
-
+      this.setState({
+        lastNameData:event.target.value
+        
+              })
      }
      emailChang(){
-
+      this.setState({
+        emailData:event.target.value
+        
+              })
 
      }
   render() {
