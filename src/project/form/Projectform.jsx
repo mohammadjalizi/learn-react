@@ -31,15 +31,15 @@ event.preventdefault()
 
 
 <form className='  bg-yellow-500 w-[50%] m-auto rounded-3xl border border-cyan-300  '  onSubmit={this.submithandel}  autoComplete="off">
-<input type="text"  value={this.state.firstNameData}  placeholder="firstName">
+<input type="text"  value={this.state.firstNameData}  placeholder="firstName" onChange={this.firstnameChang}  >
 
 
 </input>
-<input type="text"  value={this.state.lastNameData}  placeholder="lastname">
+<input type="text"  value={this.state.lastNameData}  placeholder="lastname" onChange={this.lastnameChang}     >
 
   
 </input>
-<input type="text"  value={this.state.emailData}  placeholder="email">
+<input type="text"  value={this.state.emailData}  placeholder="email"   onChange={this.emailChang} >
 
   
 </input>
