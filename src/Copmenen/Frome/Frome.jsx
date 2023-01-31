@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class Frome extends Component {
 
-    constructor(prosp){
+    constructor(props){
 super(props)
 this.state={
 username:''
@@ -13,9 +13,9 @@ username:''
     }
   render() {
     return (
-      <div>
+      <div cl>
 <div>
-    <input type="text"  value={this.state.username} />
+    <input type="text"  value={this.state.username}  className=" bg-slate-500 "/>
     </div>
 
 
