@@ -14,7 +14,9 @@ username:''
   render() {
     return (
       <div>
-<div><input type="text" name="" id="" /></div>
+<div>
+    <input type="text"  value={this.state.username} />
+    </div>
 
 
       </div>
