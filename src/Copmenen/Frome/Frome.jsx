@@ -18,6 +18,14 @@ this.CLICKCHng=this.CLICKCHng.bind(this)
     }
     CLICKCHng(event){
 console.log(event)
+this.setState({
+username:event.nativeEvent.target.value
+
+
+}
+
+
+)
 
     
     }
