@@ -29,26 +29,28 @@ selecthandel(){
 
   render() {
     return (
-      <div>
+      <div className='  bg-orange-400 '>
+        <div className=' flex first-letter:bg-lime-200   my-20  justify-center'>   
         <div>
 
-            <input   placeholder='Firstname'/>
+            <input  className=' mt-5 p-2  border  rounded-3xl shadow-2xl'      placeholder='Firstname'/>
 
            
         </div>
 
         <div>
 
-        <input   placeholder='phon number'/>
+        <input className=' mt-5 p-2  border  rounded-3xl shadow-2xl'   placeholder='phon number'/>
 
         </div>
 
         <div>
 
-        <input   placeholder='Email'/>
+        <input  className=' mt-5 p-2  border  rounded-3xl shadow-2xl'     placeholder='Email'/>
 
         </div>
-
+        </div>
+        <div className=' flex justify-between w-[50%] m-auto'>  
         <div className=' col'>
 <select className=''  onChange={this.selecthandel}>
 <option value="-1" > ...please select  </option>
@@ -65,6 +67,7 @@ selecthandel(){
             <select>
                 <option value="-1">please selct city</option>
             </select>
+        </div>
         </div>
       </div>
     )

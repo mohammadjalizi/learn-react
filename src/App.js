@@ -8,6 +8,7 @@ import Temp from './Copmenen/temps/Temp';
 import Navbar from './Copmenen/navbar/Navbar';
 import Frome from './Copmenen/Frome/Frome';
 import Project1 from './project/form/Project1';
+import Ticket from './project/TIcket/Ticket';
 export  class  App extends  React.Component {
 
  
@@ -95,6 +96,7 @@ this.code=25
  { this.state.age>18 ?  <Conter/> :   <Temp/>}
  
 <Project1/>
+<Ticket/>
         </div>
     
       );
