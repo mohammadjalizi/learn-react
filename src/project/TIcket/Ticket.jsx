@@ -68,10 +68,10 @@ maincountry:mainCiti
 
         </div>
 
-        <div>
+        <div className=' mb-12'>
 
             <select>
-    {this.state.maincountriscity.length&&this.state.length.maincountriscity.map(city=>(
+    {this.state.maincountriscity.length&&this.state.length.mainCiti.map(city=>(
 
 <option value={city}>{city}</option>
 
