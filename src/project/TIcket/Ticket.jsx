@@ -55,6 +55,13 @@ Us:["los Anglos","san Diego"]
 
 
         </div>
+
+        <div>
+
+            <select>
+                <option value="-1">please selct city</option>
+            </select>
+        </div>
       </div>
     )
   }
