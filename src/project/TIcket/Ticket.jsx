@@ -17,6 +17,10 @@ Us:["los Anglos","san Diego"]
 }
 
 
+this.selecthandel=this.selecthandel.bind(this)
+}
+selecthandel(){
+
 
 }
 
