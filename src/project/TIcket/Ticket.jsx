@@ -25,7 +25,7 @@ selecthandel(event){
 console.log( mainCiti  )
 this.setState({
 
-maincountry:mainCiti
+  maincountriscity:mainCiti
 })
 }
 
@@ -71,7 +71,7 @@ maincountry:mainCiti
         <div className=' mb-12'>
 
             <select>
-    {this.state.maincountriscity.length&&this.state.length.mainCiti.map(city=>(
+    {this.state.maincountriscity.length&&this.state.maincountriscity.map(city=>(
 
 <option value={city}>{city}</option>
 
