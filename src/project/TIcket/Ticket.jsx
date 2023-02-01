@@ -81,11 +81,16 @@ this.setState({
         <div className=' mb-12'>
 
             <select>
-    {this.state.maincountriscity.length&&this.state.maincountriscity.map(city=>(
+    {this.state.maincountriscity.length ?this.state.maincountriscity.map(city=>(
 
 <option value={city}>{city}</option>
 
-    ))}
+    )):(
+
+<option value='-1'>...pleser selct</option>
+
+
+    )}
          
             </select>
         </div>
