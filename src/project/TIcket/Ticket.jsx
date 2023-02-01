@@ -20,8 +20,9 @@ Us:["los Anglos","san Diego"]
 this.selecthandel=this.selecthandel.bind(this)
 }
 selecthandel(event){
-console.log(event)
-
+   let maintarget= event.target.value
+   let mainCiti=this.state.countinersData[maintarget]
+console.log( mainCiti  )
 }
 
 
@@ -55,8 +56,8 @@ console.log(event)
 <select className=''  onChange={this.selecthandel}>
 <option value="-1" > ...please select  </option>
 <option className='' value="iran">iran</option>
-<option className='' value="iran">turket</option>
-<option className='' value="iran">Us</option>
+<option className='' value="turkey">turket</option>
+<option className='' value="us">Us</option>
 </select>
 
 
