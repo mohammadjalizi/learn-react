@@ -23,7 +23,12 @@ selecthandel(event){
    let maincountry= event.target.value
    let mainCiti=this.state.countinersData[maincountry]
 console.log( mainCiti  )
+this.setState({
+
+maincountry:mainCiti
+})
 }
+
 
 
 
@@ -66,7 +71,12 @@ console.log( mainCiti  )
         <div>
 
             <select>
-                <option value="-1">please selct city</option>
+    {this.state.maincountriscity.length&&this.state.length.maincountriscity.map(city=>(
+
+<option value={city}>{city}</option>
+
+    ))}
+         
             </select>
         </div>
         </div>
