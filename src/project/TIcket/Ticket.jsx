@@ -21,13 +21,23 @@ this.selecthandel=this.selecthandel.bind(this)
 }
 selecthandel(event){
    let maincountry= event.target.value
-   let mainCiti=this.state.countinersData[maincountry]
-console.log( mainCiti  )
-this.setState({
 
-  maincountriscity:mainCiti
+   if(maincountry==='-1'){
+this.setState({
+  maincountriscity:[]
 })
-}
+
+   }else{
+    let mainCiti=this.state.countinersData[maincountry]
+    console.log( mainCiti  )
+    this.setState({
+    
+      maincountriscity:mainCiti
+    })
+    }
+    
+
+   }
 
 
 
