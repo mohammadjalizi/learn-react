@@ -38,6 +38,12 @@ Us:["los Anglos","san Diego"]
         <input   placeholder='phon number'/>
 
         </div>
+
+        <div>
+
+        <input   placeholder='Email'/>
+
+        </div>
       </div>
     )
   }
