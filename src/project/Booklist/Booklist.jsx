@@ -5,7 +5,7 @@ export class Booklist extends Component {
     return (
       <div>
 
-<h1>  <BsBookFill/>Booklist    </h1>
+<h1 className='  flex justify-center  w-full '>  <BsBookFill   className=' mt-1 mr-6   text-yellow-300    '/>Booklist    </h1>
 
 
       </div>
