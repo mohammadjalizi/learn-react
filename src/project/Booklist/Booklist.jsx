@@ -31,6 +31,17 @@ year:'',
 </div>  
 <button   value={this.state.year} className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
 </div>
+<table>
+
+    <thead>
+
+        <tr>
+            <th>title</th>
+            <th>atyhou</th>
+            <th>year</th>
+        </tr>
+    </thead>
+</table>
       </div>
     )
   }
