@@ -16,13 +16,23 @@ this.athourhandler=this.athourhandler.bind(this)
     }
 
     titlehandler(event){
-        
+        this.setState({
+title:event.target.value
+
+        })
     }
     athourhandler(event){
+this.setStatez({
 
+    athure:event.target.value
+})
 
     }
     yearhandler(event){
+        this.setState({
+year:event.target.value
+
+        })
 
     }
   render() {
@@ -60,3 +70,7 @@ this.athourhandler=this.athourhandler.bind(this)
 }
 
 export default Booklist
+
+// git push origin master
+// git commit -m "  added project  "
+// git push origin master
