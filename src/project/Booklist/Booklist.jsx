@@ -1,6 +1,18 @@
 import React, { Component } from 'react'
 import { BsBookFill } from 'react-icons/bs';
 export class Booklist extends Component {
+    constructor(props){
+super(props)
+this.state={
+books:[],
+title:'',
+athure:'',
+year:'',
+
+
+}
+
+    }
   render() {
     return (
       <div>
