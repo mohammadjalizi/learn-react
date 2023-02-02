@@ -11,7 +11,8 @@ year:'',
 
 
 }
-
+this.titlehandler=this.titlehandler.bind(this)
+this.athourhandler=this.athourhandler.bind(this)
     }
 
     titlehandler(event){
@@ -19,7 +20,10 @@ year:'',
     }
     athourhandler(event){
 
-        
+
+    }
+    yearhandler(event){
+
     }
   render() {
     return (
