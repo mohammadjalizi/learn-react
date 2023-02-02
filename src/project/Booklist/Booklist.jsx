@@ -21,15 +21,15 @@ year:'',
 <div className=' w-[70%] m-auto bg-orange-500 p-16 '>   
 <div className=' my-14 '>
 <h1>tittle</h1>
-<input type=""  className=' rounded-3xl  border  w-full '/>
+<input type=""   value={this.state.title}   className=' rounded-3xl  border  w-full '/>
 
 </div>
 <div>
 <h1>tittle</h1>
-<input type=""  className='  rounded-3xl w-full '/>
+<input type="" value={this.state.athure}  className='  rounded-3xl w-full '/>
 
 </div>  
-<button className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
+<button   value={this.state.year} className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
 </div>
       </div>
     )
