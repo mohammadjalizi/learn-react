@@ -13,6 +13,14 @@ year:'',
 }
 
     }
+
+    titlehandler(event){
+        
+    }
+    athourhandler(event){
+
+        
+    }
   render() {
     return (
       <div>
