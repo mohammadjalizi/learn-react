@@ -26,7 +26,7 @@ year:'',
 </div>
 <div>
 <h1>tittle</h1>
-<input type="" value={this.state.athure}        onChange={this.titlehandler}     className='  rounded-3xl w-full '/>
+<input type="" value={this.state.athure}        onChange={this.athourhandler}     className='  rounded-3xl w-full '/>
 
 </div>  
 <button   value={this.state.year}       onChange={this.titlehandler}     className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
