@@ -29,7 +29,7 @@ year:'',
 <input type="" value={this.state.athure}        onChange={this.athourhandler}     className='  rounded-3xl w-full '/>
 
 </div>  
-<button   value={this.state.year}       onChange={this.titlehandler}     className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
+<button   value={this.state.year}       onChange={this.yearhandler}     className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
 </div>
 <table className=' w-full  my-8'>
 
