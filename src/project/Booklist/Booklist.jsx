@@ -17,7 +17,7 @@ export class Booklist extends Component {
 <input type=""  className='  rounded-3xl w-full '/>
 
 </div>  
-<button className=' bg-orange-400 w-full '>Add Book</button>
+<button className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
 </div>
       </div>
     )
