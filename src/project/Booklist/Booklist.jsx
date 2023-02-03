@@ -78,7 +78,11 @@ event.preventDefault()
         </tr>
     </thead>
     <tbody>
-        <Book/>
+        {this.state.books.map(book=>(
+
+<Book/>
+        ))}
+       
     </tbody>
 </table>
       </div>
