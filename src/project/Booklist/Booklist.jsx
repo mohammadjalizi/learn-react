@@ -5,7 +5,7 @@ export class Booklist extends Component {
     constructor(props){
 super(props)
 this.state={
-books:[1],
+books:[],
 title:'',
 athure:'',
 year:''
