@@ -39,10 +39,12 @@ year:event.target.value
     }
 submithandel(event){
 event.preventDefault() 
-    let{title,athure,year}=this.state
+
+
+let{title,athure,year}=this.state
 
 if(title&&athure&&year){
-
+console.log("okk")
 let newbook={
 
 id:this.state.books.length+1,
