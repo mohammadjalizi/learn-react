@@ -7,12 +7,13 @@ this.state={
 books:[],
 title:'',
 athure:'',
-year:'',
+year:''
 
 
 }
 this.titlehandler=this.titlehandler.bind(this)
 this.athourhandler=this.athourhandler.bind(this)
+this.yearhandler=this.yearhandler.bind(this)
     }
 
     titlehandler(event){
@@ -54,10 +55,10 @@ year:event.target.value
 </div>  
 <div>
 <h1>year</h1>
-<input type="" value={this.state.athure}        onChange={this.yearhandler}     className='  rounded-3xl w-full '/>
+<input type="" value={this.state.year}        onChange={this.yearhandler}     className='  rounded-3xl w-full '/>
 
 </div> 
-<button   value={this.state.year}         className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
+<button   className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
 </div>
 <table className=' w-full  my-8'>
 
