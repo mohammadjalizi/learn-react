@@ -5,8 +5,8 @@ export default class  extends Component {
     return (
      <tr>
         <th>{this.props.title}</th>
-        <th>فردوسی</th>
-        <th>1254</th>
+        <th>{this.props.athure}</th>
+        <th>{this.props.year}</th>
      </tr>
     )
   }

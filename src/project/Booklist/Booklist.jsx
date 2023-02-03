@@ -99,7 +99,7 @@ books:{...this.state.books,newbook}
     <tbody>
         {this.state.books.map(book=>(
 
-<Book/>
+<Book {...book} key={book.id}  />
         ))}
        
     </tbody>
