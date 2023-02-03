@@ -37,7 +37,7 @@ year:event.target.value
         })
     }
 submithandel(event){
-
+event.preventDefault() 
     console.log(event)
 }
   render() {
