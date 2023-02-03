@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BsBookFill } from 'react-icons/bs';
+import Book from './Book';
 export class Booklist extends Component {
     constructor(props){
 super(props)
@@ -76,6 +77,9 @@ event.preventDefault()
             <th>year</th>
         </tr>
     </thead>
+    <tbody>
+        <Book/>
+    </tbody>
 </table>
       </div>
     )
