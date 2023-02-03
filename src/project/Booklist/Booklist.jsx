@@ -42,8 +42,9 @@ year:event.target.value
       <div>
 
 <h1 className='  flex justify-center  border-b-2 border-blue-400 my-16  w-full '>  <BsBookFill   className=' mt-1 mr-6   text-yellow-300    '/>Booklist    </h1>
-<div className=' w-[70%] m-auto bg-orange-500 p-16 '>   
+<form className=' w-[70%] m-auto bg-orange-500 p-16 ' >   
 <div className=' my-14 '>
+
 <h1>tittle</h1>
 <input type=""   value={this.state.title}        onChange={this.titlehandler}      className=' rounded-3xl  border  w-full '/>
 
@@ -59,7 +60,9 @@ year:event.target.value
 
 </div> 
 <button   className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
-</div>
+</form>
+
+
 <table className=' w-full  my-8'>
 
     <thead>
