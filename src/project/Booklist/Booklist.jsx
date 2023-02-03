@@ -51,6 +51,10 @@ athure,
 year,
 
 }
+this.setState({
+books:{...this.state.books,newbook}
+
+})
 
 }
 
