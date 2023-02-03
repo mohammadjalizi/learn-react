@@ -45,10 +45,7 @@ if(title&&athure&&year){
 
 let newbook={
 
-id:this.state.books
-title:'',
-athure:'',
-year:'',
+id:this.state.books.length+1
 
 }
 
