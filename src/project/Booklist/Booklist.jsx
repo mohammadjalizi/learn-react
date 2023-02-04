@@ -71,14 +71,14 @@ export class Booklist extends Component {
     return (
         <>
         <form  className=' bg-orange-400 ' autocomplete="off" onSubmit={this.submitHandler}>
-            <div className="form-group">
+            <div className=" my-8">
                 <label for="title">Title</label>
-                <input type="text" id="title" className="form-control" onChange={this.titleHandler} value={this.state.title} />
+                <input type="text"  className=" block w-full rounded-full p-2 " onChange={this.titleHandler} value={this.state.title} />
             </div>
 
-            <div className="form-group">
+            <div className=" my-4">
                 <label for="author">Author</label>
-                <input type="text" id="author" className="form-control" onChange={this.authorHandler} value={this.state.author} />
+                <input type="text"  className=" block rounded-full p-2  " onChange={this.authorHandler} value={this.state.author} />
             </div>
 
             <div className="form-group">
