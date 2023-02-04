@@ -83,7 +83,7 @@ export class Booklist extends Component {
 
             <div className="form-group">
                 <label for="year">Year</label>
-                <input type="text" id="year" className="form-control" onChange={this.yearHandler} value={this.state.year} />
+                <input type="text" className=" block rounded-full p-2  "onChange={this.yearHandler} value={this.state.year} />
             </div>
             <input type="submit" value="Add Book" className="btn btn-warning btn-block add-btn" />
         </form>
