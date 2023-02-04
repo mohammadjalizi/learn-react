@@ -4,64 +4,15 @@ import Book from './Book';
 export class Booklist extends Component {
     constructor(props){
 super(props)
-this.state={
+this.state ={
 books:[],
 title:'',
 athure:'',
-year:''
+year:'',
 
 
 }
-this.titlehandler=this.titlehandler.bind(this)
-this.athourhandler=this.athourhandler.bind(this)
-this.yearhandler=this.yearhandler.bind(this)
-    }
 
-    titlehandler(event){
-        this.setState({
-title:event.target.value
-
-        })
-    }
-    athourhandler(event){
-this.setState({
-
-    athure:event.target.value
-})
-
-    }
-    yearhandler(event){
-
-        this.setState({
-year:event.target.value
-
-        })
-    }
-submithandel(event){
-event.preventDefault() 
-
-
-let{title,athure,year}=this.state
-
-if(title&&athure&&year){
-console.log("okk")
-let newbook={
-
-id:this.state.books.length+1,
-title,
-athure,
-year,
-
-}
-this.setState({
-books:{...this.state.books,newbook}
-
-})
-
-}
-
-
-}
   render() {
     return (
       <div>
