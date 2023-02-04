@@ -34,7 +34,7 @@ if(title && athure &&  year){
 }
 titlehandler(event){
 this.setState({
-title:this.state.title
+title:event.target.value
 
 })
 
@@ -42,11 +42,14 @@ title:this.state.title
 
 athourhandler(event){
 this.setState({
-    athure:this.state.athure
+    athure:event.target.value
 })
 }
 yearhandler(event){
+this.setState({
 
+year:event.target.value
+})
 }
 
   render() {
