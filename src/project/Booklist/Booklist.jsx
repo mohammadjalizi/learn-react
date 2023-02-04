@@ -2,101 +2,108 @@ import React, { Component } from 'react'
 import { BsBookFill } from 'react-icons/bs';
 import Book from './Book';
 export class Booklist extends Component {
-    constructor(props){
-super(props)
-this.state ={
-books:[],
-title:'',
-athure:'',
-year:'',
 
+    constructor() {
+        super()
 
-}
+        this.state = {
+            books: [],
 
-this.submithandel=this.submithandel.bind(this)
-this.titlehandler=this.titlehandler.bind(this)
-this.athourhandler=this.athourhandler.bind(this)
-this.yearhandler=this.yearhandler.bind(this)
+            title: '',
+            author: '',
+            year: '',
+        }
+
+        this.titleHandler = this.titleHandler.bind(this)
+        this.authorHandler = this.authorHandler.bind(this)
+        this.yearHandler = this.yearHandler.bind(this)
+        this.submitHandler = this.submitHandler.bind(this)
+
     }
 
-submithandel(event){
-event.preventDefault()
-let {title,athure,year}=this.state
-if(title && athure &&  year){
-    let Newbook={
-        id:this.state.books.length +1,
-        title,
-        athure,
-        year
+    submitHandler(event) {
+        event.preventDefault()
+
+        let {title, author, year} = this.state
+
+        if (title && author && year) {
+            let newBook = {
+                id: this.state.books.length + 1,
+                title,
+                author,
+                year
+            }
+
+            this.setState({
+                books: [...this.state.books, newBook]
+            })
+
+            this.setState({
+                title: '',
+                author: '',
+                year: '',
+            })
+
+        }
+
     }
-}
 
-}
-titlehandler(event){
-this.setState({
-title:event.target.value
+    titleHandler(event) {
+        this.setState({
+            title: event.target.value
+        })
+    }
 
-})
+    authorHandler(event) {
+        this.setState({
+            author: event.target.value
+        })
+    }
 
-}
+    yearHandler(event) {
+        this.setState({
+            year: event.target.value
+        })
+    }
 
-athourhandler(event){
-this.setState({
-    athure:event.target.value
-})
-}
-yearhandler(event){
-this.setState({
-
-year:event.target.value
-})
-}
 
   render() {
     return (
-      <div>
+        <>
+        <form id="book-form" autocomplete="off" onSubmit={this.submitHandler}>
+            <div className="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" className="form-control" onChange={this.titleHandler} value={this.state.title} />
+            </div>
 
-<h1 className='  flex justify-center  border-b-2 border-blue-400 my-16  w-full '>  <BsBookFill   className=' mt-1 mr-6   text-yellow-300    '/>Booklist    </h1>
-<form classtatesName=' w-[70%] m-auto bg-orange-500 p-16 '  onSubmit={this.submithandel}>   
-<div className=' my-14 '>
+            <div className="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" className="form-control" onChange={this.authorHandler} value={this.state.author} />
+            </div>
 
-<h1>tittle</h1>
-<input type=""   value={this.state.title}        onChange={this.titlehandler}      className=' rounded-3xl  border  w-full '/>
+            <div className="form-group">
+                <label for="year">Year</label>
+                <input type="text" id="year" className="form-control" onChange={this.yearHandler} value={this.state.year} />
+            </div>
+            <input type="submit" value="Add Book" className="btn btn-warning btn-block add-btn" />
+        </form>
+        <table class="table table-striped mt-5 text-center">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                {this.state.books.map(book => (
+                    <Book {...book} key={book.id} />
+                ))}
+            </tbody>
+        </table>
 
-</div>
-<div>
-<h1>tittle</h1>
-<input type="" value={this.state.athure}        onChange={this.athourhandler}     className='  rounded-3xl w-full '/>
 
-</div>  
-<div>
-<h1>year</h1>
-<input type="" value={this.state.year}        onChange={this.yearhandler}     className='  rounded-3xl w-full '/>
-
-</div> 
-<button   className='  my-7 rounded-full p-4 bg-orange-400 w-full '>Add Book</button>
-</form>
-
-
-<table className=' w-full  my-8'>
-
-    <thead>
-
-        <tr>
-            <th>title</th>
-            <th>atyhou</th>
-            <th>year</th>
-        </tr>
-    </thead>
-    <tbody>
-        {this.state.books.map(book=>(
-
-<Book {...book} key={book.id}  />
-        ))}
-       
-    </tbody>
-</table>
-      </div>
+    </>
     )
   }
 }
