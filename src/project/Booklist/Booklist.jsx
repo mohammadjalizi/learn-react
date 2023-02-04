@@ -15,6 +15,7 @@ year:'',
 
 this.submithandel=this.submithandel.bind(this)
 this.titlehandler=this.titlehandler.bind(this)
+this.athourhandler=this.athourhandler.bind(this)
     }
 
 submithandel(event){
