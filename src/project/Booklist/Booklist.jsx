@@ -22,10 +22,21 @@ this.yearhandler=this.yearhandler.bind(this)
 submithandel(event){
 event.preventDefault()
 let {title,athure,year}=this.state
+if(title && athure &&  year){
+    let Newbook={
+        id:this.state.books.length +1,
+        title,
+        athure,
+        year
+    }
+}
 
 }
 titlehandler(event){
+this.setState({
+title:this.state.title
 
+})
 
 }
 
