@@ -16,10 +16,12 @@ year:'',
 this.submithandel=this.submithandel.bind(this)
 this.titlehandler=this.titlehandler.bind(this)
 this.athourhandler=this.athourhandler.bind(this)
+this.yearhandler=this.yearhandler.bind(this)
     }
 
 submithandel(event){
 event.preventDefault()
+let {title,athure,year}=this.state
 
 }
 titlehandler(event){
