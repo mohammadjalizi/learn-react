@@ -41,7 +41,9 @@ title:this.state.title
 }
 
 athourhandler(event){
-
+this.setState({
+    athure:this.state.athure
+})
 }
 yearhandler(event){
 
