@@ -12,20 +12,32 @@ year:'',
 
 
 }
+
+this.submithandel=this.submithandel.bind(this)
     }
 
 submithandel(event){
 event.preventDefault()
 
 }
+titlehandler(event){
 
+
+}
+
+athourhandler(event){
+
+}
+yearhandler(event){
+
+}
 
   render() {
     return (
       <div>
 
 <h1 className='  flex justify-center  border-b-2 border-blue-400 my-16  w-full '>  <BsBookFill   className=' mt-1 mr-6   text-yellow-300    '/>Booklist    </h1>
-<form className=' w-[70%] m-auto bg-orange-500 p-16 '  onSubmit={this.submithandel}>   
+<form classtatesName=' w-[70%] m-auto bg-orange-500 p-16 '  onSubmit={this.submithandel}>   
 <div className=' my-14 '>
 
 <h1>tittle</h1>
