@@ -70,7 +70,7 @@ export class Booklist extends Component {
   render() {
     return (
         <>
-        <form id="book-form" autocomplete="off" onSubmit={this.submitHandler}>
+        <form  className=' bg-orange-400 ' autocomplete="off" onSubmit={this.submitHandler}>
             <div className="form-group">
                 <label for="title">Title</label>
                 <input type="text" id="title" className="form-control" onChange={this.titleHandler} value={this.state.title} />
