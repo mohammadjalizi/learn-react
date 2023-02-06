@@ -78,17 +78,17 @@ export class Booklist extends Component {
 
             <div className=" my-4">
                 <label for="author">Author</label>
-                <input type="text"  className=" block rounded-full p-2  " onChange={this.authorHandler} value={this.state.author} />
+                <input type="text"  className=" block  w-full  rounded-full p-2  " onChange={this.authorHandler} value={this.state.author} />
             </div>
 
             <div className="form-group">
                 <label for="year">Year</label>
-                <input type="text" className=" block rounded-full p-2  "onChange={this.yearHandler} value={this.state.year} />
+                <input type="text" className=" block  w-full  rounded-full p-2  "onChange={this.yearHandler} value={this.state.year} />
             </div>
-            <input type="submit" value="Add Book" className="btn btn-warning btn-block add-btn" />
+            <input type="submit" value="Add Book" className=" my-4 p-4   rounded-3xl  bg-cyan-500 hover:bg-cyan-600 block w-full" />
         </form>
-        <table class="table table-striped mt-5 text-center">
-            <thead>
+        <table className=' w-full'>
+            <thead className='  '>
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
