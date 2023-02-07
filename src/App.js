@@ -11,6 +11,7 @@ import Project1 from './project/form/Project1';
 import Ticket from './project/TIcket/Ticket';
 import Usersli from './Copmenen/user/Usersli';
 import Booklist from './project/Booklist/Booklist';
+import Shoping from './project/Shoping/Shoping';
 export  class  App extends  React.Component {
 
  
@@ -106,6 +107,7 @@ this.code=25
 </ul>
 <hr/>
 <Booklist/>
+<Shoping/>
         </div>
     
       );
