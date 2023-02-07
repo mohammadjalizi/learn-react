@@ -40,8 +40,10 @@ export default class Shoping extends Component {
                 </header>
                 <section class="container content-section">
                     <div class="shop-items">
-
-                        <Product />
+{this.state.products.map(proudoct=>(
+  <Product />
+))}
+                      
                     </div>
                 </section>
                 <section class="container content-section">
