@@ -1,3 +1,6 @@
+
+import Product from "./Proudoct"
+
 export default class Shoping extends Component {
 
     constructor(props) {
@@ -55,7 +58,7 @@ export default class Shoping extends Component {
                     </div>
                     <div class="cart-items">
 
-                        <CartProduct />
+                      
 
 
                     </div>
@@ -68,7 +71,6 @@ export default class Shoping extends Component {
                         <h3 class="band-name">The Generics</h3>
                         <ul class="nav footer-nav">
 
-                            <Social />
                         </ul>
                     </div>
                 </footer>
